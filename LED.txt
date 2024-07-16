@@ -1,0 +1,16 @@
+// C++ code
+//
+int dt;
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  dt = analogRead(A0);
+  Serial.print("temp = ");
+  Serial.println(dt);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
